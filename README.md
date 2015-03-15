@@ -24,4 +24,5 @@ Let me know if there are questions.
 
 Meanwhile you can take a look at my other “application in action” for the very same board at Thingspeak (https://thingspeak.com/channels/15699).
 
-I added a new version of file googletime.lua named googletime_TS.lua that send three parameters to ThinkSpeak (15Mar2015)
+(15Mar2015)
+I added a new version of the file googletime.lua, named googletime_TS.lua, that sends three parameters to ThinkSpeak.
