@@ -15,10 +15,10 @@ function getTime()
         --print(payload)
             time = string.sub(payload,  string.find(payload,"Date: ")+23, string.find(payload,"Date: ")+31)
             hour = string.sub(time, 0, 2) + 20
-  						if hour > 23 then hour = hour - 24 end
+  		if hour > 23 then hour = hour - 24 end
             minute = string.sub(time, 4,5) + 0
             second = string.sub(time, 7,9) + 0
-							mins = 60*hour + minute
+		mins = 60*hour + minute
             print("Time: "..hour.."-"..minute.."-"..second)
             conn:close()
             lastUpdate = 0
