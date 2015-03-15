@@ -70,17 +70,17 @@ tmr.alarm(0, 10000, 1, function()
 
 	if mins >= 360 and mins < 1320 then --day
 		day = 1
-        if (l>50) then
-            gpio.write(redPin,gpio.HIGH)
-			      led = 1
-        else
-            gpio.write(redPin,gpio.LOW)
-			      led = 0
-        end
-  else
+        	if (l>50) then
+        		gpio.write(redPin,gpio.HIGH)
+			led = 1
+        	else
+        		gpio.write(redPin,gpio.LOW)
+        		led = 0
+        	end
+  	else
 		gpio.write(redPin,gpio.LOW)
 		day = 0
-  end
+	end
 end)
 
 tmr.alarm(3,300000,1, function()
